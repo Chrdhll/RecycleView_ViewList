@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kalkulatorSederhana">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtKalkulator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:padding="20sp"
+            android:text="Kalkulator Sederhana"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/etAngka1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="angka 1 :"
+            android:inputType="numberSigned"
+            android:padding="13sp" />
+
+        <EditText
+            android:id="@+id/etAngka2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="angka 2 :"
+            android:inputType="numberSigned"
+            android:padding="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btntambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:layout_weight="1"
+                android:text="Tambah +" />
+
+            <Button
+                android:id="@+id/btnkurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:layout_weight="1"
+                android:text="Kurang -" />
+
+            <Button
+                android:id="@+id/btnkali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4sp"
+                android:layout_weight="1"
+                android:text="Kali *" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Hasil"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
