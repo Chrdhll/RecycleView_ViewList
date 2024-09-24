@@ -10,9 +10,12 @@
 
     <TextView
         android:id="@+id/tvNamaBuah"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+        android:background="#F3969F"
+        android:text="Apel"
         android:textStyle="bold"
         android:layout_gravity="center"
         />
@@ -22,5 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:src="@drawable/apple"
         android:contentDescription="Gambar Buah"/>
 </LinearLayout>

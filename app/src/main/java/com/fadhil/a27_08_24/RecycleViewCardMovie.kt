@@ -71,6 +71,7 @@ class RecycleViewCardMovie : AppCompatActivity() {
     private fun showDetailDialog(position: Int) {
         val intent = Intent(this,DetailMovieActivity::class.java)
         intent.putExtra("imageResId",movieList[position].image)
+        intent.putExtra("title",movieList[position].title)
         startActivity(intent)
     }
 

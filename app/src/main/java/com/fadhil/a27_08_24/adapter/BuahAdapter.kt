@@ -6,11 +6,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
+import androidx.constraintlayout.motion.widget.MotionScene.Transition.TransitionOnClick
 import androidx.recyclerview.widget.RecyclerView
 import com.fadhil.a27_08_24.R
 import com.fadhil.a27_08_24.model.ModelBuah
 
-class BuahAdapter(val itemList: ArrayList<ModelBuah>,private val onItemClick : (ModelBuah) -> Unit) :
+class BuahAdapter(val itemList: ArrayList<ModelBuah>,private val onItemClick :( ModelBuah) -> Unit):
     RecyclerView.Adapter<BuahAdapter.ModelViewHolder>() {
     class ModelViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         //deklarasi widget dari item layout

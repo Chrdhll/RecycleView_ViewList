@@ -18,7 +18,7 @@ class DetailBuahActivity : AppCompatActivity() {
         val namaBuah = intent.getStringExtra("namaBuah")
         val gambarBuah = intent.getIntExtra("gambarBuah",0)
 
-        //referensu ke textview dan imageview di layout
+        //referensi ke textview dan imageview di layout
         val tvNamaBuah = findViewById<TextView>(R.id.tvNamaBuah)
         val ivGambarBuah = findViewById<ImageView>(R.id.ivGambarBuah)
 
