@@ -23,6 +23,7 @@ class MovieAdapter(
         val txtMovie: TextView = itemView.findViewById(R.id.txtMovie)
         val imgMovie: ImageView = itemView.findViewById(R.id.imgMovie)
         val cardView: CardView = itemView.findViewById(R.id.cardView)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {

@@ -18,12 +18,19 @@ class DetailMovieActivity : AppCompatActivity() {
 
         val imageResId = intent.getIntExtra("imageResId",-1)
         val judul = intent.getStringExtra("title")
+        val tanggal = intent.getStringExtra("tanggal")
+        val sinopsis = intent.getStringExtra("sinopsis")
+
 
         if(imageResId != -1){
             val imageView = findViewById<ImageView>(R.id.imageViewDetail)
-            val TextView = findViewById<TextView>(R.id.imgMovie)
+            val TextView = findViewById<TextView>(R.id.judulmovie)
+            val txttanggal = findViewById<TextView>(R.id.txttgl)
+            val txtsinopsis = findViewById<TextView>(R.id.txtsinopsis)
 
 
+            txtsinopsis.text = sinopsis
+            txttanggal.text = tanggal
             TextView.text = judul
             imageView.setImageResource(imageResId)
         }
